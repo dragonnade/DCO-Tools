@@ -18,3 +18,6 @@ Required as the Planning Inspectorate removes documents from its website after 5
 These links are static, so with improvements to the metadata scraping, this can be easily maintained as a static database.
 
 However, the National Archives website throws 403 errors resulting in a 404 page if you look at too many web pages in a short space of time (something like 10 pages within 10 minutes). This database needs a health warning so that the user doesn't think that everything is broken when the 403 error just needs to time out.
+
+### Relevant Reps
+Scrapes the content of relevant representations made on a project into a single word document, and downloads any .pdf files provided by parties making representations.
