@@ -1,0 +1,93 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    /* Layout Components */
+    .page-container {
+      @apply flex justify-center items-start min-h-[80vh] max-h-80;
+    }
+    
+    .content-card {
+      @apply bg-white shadow-lg rounded-lg p-8 max-w-4xl w-full;
+    }
+  
+    /* Typography Components */
+    .page-title {
+      @apply text-2xl font-bold text-center text-slate-800 mb-6;
+    }
+  
+    /* Button Components */
+    .primary-button {
+      @apply bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded;
+      /* We can also add additional CSS properties that might not be available in Tailwind */
+      transition: transform 0.1s ease-in-out;
+    }
+  
+    .primary-button:active {
+      transform: scale(0.98);
+    }
+  
+    .year-button {
+      @apply px-2 py-1 bg-white hover:bg-green-700 hover:text-white rounded-md shadow-sm border border-gray-300 text-sm;
+    }
+  
+    /* Container Components */
+    .scroll-container {
+      @apply max-h-72 overflow-y-auto space-y-2 pr-4;
+    }
+  
+    .year-navigation {
+      @apply bg-gray-100 p-4 rounded-lg;
+    }
+  
+    .year-grid {
+      @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 bg-scroll;
+    }
+  
+    /* Card Components */
+    .order-card {
+      @apply border rounded-lg p-3 bg-slate-50 hover:bg-green-700 hover:italic hover:text-slate-200 text-gray-800;
+      background: inherit;
+      border: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+    }
+  
+    .order-text {
+      @apply text-inherit hover:italic text-sm;
+    }
+  
+    .article-card {
+      @apply border rounded-lg p-4 bg-slate-50 hover:bg-slate-100 transition-colors duration-200;
+      background: inherit;
+      border: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .article-card:focus, .order-card:focus {
+      outline: 2px solid #4F46E5;
+      outline-offset: 2px;
+    }
+
+    .article-text {
+        @apply text-inherit hover:italic text-sm;
+      }
+
+
+    /* Alert Components */
+    .error-alert {
+      @apply bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4;
+    }
+  
+    .loading-text {
+      @apply text-center text-gray-800;
+    }
+  }
+
+body {
+    @apply bg-gray-100;
+}

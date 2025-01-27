@@ -1,0 +1,19 @@
+.diff-content-wrapper {
+    display: inline;
+  }
+  
+  .diff-content .content.addition {
+    background-color: #e6ffe6;
+    text-decoration: underline;
+    color: #006400;
+    display: inline;
+    padding: 0.1em 0;
+  }
+  
+  .diff-content .content.deletion {
+    background-color: #ffe6e6;
+    text-decoration: line-through;
+    color: #640000;
+    display: inline;
+    padding: 0.1em 0;
+  }
